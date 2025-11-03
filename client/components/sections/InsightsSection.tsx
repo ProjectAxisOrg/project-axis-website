@@ -46,11 +46,13 @@ const expertQuotes: ExpertQuote[] = [
 ];
 
 export function InsightsSection() {
+  const { ref, hasBeenInView } = useInView({ threshold: 0.1 });
+
   return (
-    <section className="min-h-screen bg-white px-6 py-20">
+    <section className="min-h-screen bg-white px-6 py-20" ref={ref}>
       <div className="max-w-6xl mx-auto w-full">
         {/* Section Title */}
-        <div className="mb-16">
+        <div className={`mb-16 transition-all duration-700 ${hasBeenInView ? 'animate-fade-in' : 'opacity-0'}`}>
           <h2 className="font-mono text-5xl font-bold text-black uppercase mb-4">
             Voices from the Frontier
           </h2>
@@ -59,43 +61,47 @@ export function InsightsSection() {
 
         {/* Quote Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {expertQuotes.map((expert) => (
-            <div
-              key={expert.id}
-              className="group border-4 border-black bg-white p-8 hover:shadow-lg transition-all duration-300 relative overflow-hidden"
-            >
-              {/* Green glow effect on hover */}
-              <div className="absolute inset-0 bg-[#00C853] opacity-0 group-hover:opacity-5 transition-opacity duration-300" />
+          {expertQuotes.map((expert, index) => {
+            const delay = hasBeenInView ? `${index * 100}ms` : '0ms';
+            return (
+              <div
+                key={expert.id}
+                className={`group border-4 border-black bg-white p-8 hover:shadow-lg transition-all duration-700 relative overflow-hidden ${hasBeenInView ? 'animate-slide-up' : 'opacity-0'}`}
+                style={{ animationDelay: delay }}
+              >
+                {/* Green glow effect on hover */}
+                <div className="absolute inset-0 bg-[#00C853] opacity-0 group-hover:opacity-5 transition-opacity duration-300" />
 
-              <div className="relative z-10">
-                {/* Quote Mark */}
-                <div className="text-5xl font-mono text-[#00C853] mb-4">"</div>
+                <div className="relative z-10">
+                  {/* Quote Mark */}
+                  <div className="text-5xl font-mono text-[#00C853] mb-4">"</div>
 
-                {/* Quote Text */}
-                <p className="font-sans text-lg text-black mb-6 leading-relaxed italic">
-                  {expert.quote}
-                </p>
+                  {/* Quote Text */}
+                  <p className="font-sans text-lg text-black mb-6 leading-relaxed italic">
+                    {expert.quote}
+                  </p>
 
-                {/* Divider */}
-                <div className="h-1 w-16 bg-[#00C853] mb-6" />
+                  {/* Divider */}
+                  <div className="h-1 w-16 bg-[#00C853] mb-6" />
 
-                {/* Expert Info */}
-                <div className="mb-4">
-                  <p className="font-mono font-bold text-black uppercase">{expert.name}</p>
-                  <p className="font-sans text-sm text-gray-700">{expert.title}</p>
+                  {/* Expert Info */}
+                  <div className="mb-4">
+                    <p className="font-mono font-bold text-black uppercase">{expert.name}</p>
+                    <p className="font-sans text-sm text-gray-700">{expert.title}</p>
+                  </div>
+
+                  {/* View Source Button */}
+                  <a
+                    href={expert.sourceUrl}
+                    className="inline-flex items-center gap-2 px-4 py-2 border-2 border-[#00C853] bg-white text-[#00C853] font-mono text-xs font-bold uppercase hover:bg-[#00C853] hover:text-black transition-all duration-200"
+                  >
+                    <span>{expert.source}</span>
+                    <ExternalLink className="w-3 h-3" />
+                  </a>
                 </div>
-
-                {/* View Source Button */}
-                <a
-                  href={expert.sourceUrl}
-                  className="inline-flex items-center gap-2 px-4 py-2 border-2 border-[#00C853] bg-white text-[#00C853] font-mono text-xs font-bold uppercase hover:bg-[#00C853] hover:text-black transition-all duration-200"
-                >
-                  <span>{expert.source}</span>
-                  <ExternalLink className="w-3 h-3" />
-                </a>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
