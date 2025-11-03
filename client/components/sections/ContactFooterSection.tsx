@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Mail, Github, Linkedin } from 'lucide-react';
+import { useInView } from '@/hooks/use-in-view';
 
 export function ContactFooterSection() {
   const [email, setEmail] = useState('');
