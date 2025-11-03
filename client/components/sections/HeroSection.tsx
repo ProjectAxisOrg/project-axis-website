@@ -9,6 +9,9 @@ interface CountdownData {
 }
 
 export function HeroSection() {
+  useEasterEggs();
+  useProjectAxisClickEasterEgg();
+
   const [countdown, setCountdown] = useState<CountdownData>({
     months: 24,
     years: 2,
