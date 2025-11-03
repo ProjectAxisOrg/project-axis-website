@@ -66,6 +66,10 @@ export default {
         'hero': ['4rem', { lineHeight: '1.1', fontWeight: '800' }],
         'hero-sm': ['2rem', { lineHeight: '1.2', fontWeight: '700' }],
       },
+      scale: {
+        '102': '1.02',
+        '98': '0.98',
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
