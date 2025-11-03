@@ -1,4 +1,5 @@
 import { ExternalLink } from 'lucide-react';
+import { useInView } from '@/hooks/use-in-view';
 
 interface ExpertQuote {
   id: string;
