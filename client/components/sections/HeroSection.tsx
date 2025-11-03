@@ -14,7 +14,7 @@ export function HeroSection() {
 
   const [countdown, setCountdown] = useState<CountdownData>({
     months: 37,
-    years: 2,
+    years: 18,
     weeks: 8,
   });
 
