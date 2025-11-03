@@ -56,6 +56,7 @@ const timelineEvents: TimelineEvent[] = [
 ];
 
 export function TimelineSection() {
+  const { ref, hasBeenInView } = useInView({ threshold: 0.1 });
   const [filter, setFilter] = useState<FilterType>('all');
 
   const filteredEvents = filter === 'all' 
