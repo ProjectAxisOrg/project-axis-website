@@ -139,11 +139,13 @@ export function TimelineSection() {
             {filteredEvents.map((event, index) => {
               const { bg, text, label } = getTypeStyles(event.type);
               const isEven = index % 2 === 0;
+              const delay = hasBeenInView ? `${index * 100}ms` : '0ms';
 
               return (
                 <div
                   key={event.year}
-                  className={`flex gap-8 ${isEven ? 'md:flex-row-reverse' : 'md:flex-row'} flex-col`}
+                  className={`flex gap-8 ${isEven ? 'md:flex-row-reverse' : 'md:flex-row'} flex-col transition-all duration-700 ${hasBeenInView ? 'animate-slide-up' : 'opacity-0'}`}
+                  style={{ animationDelay: delay }}
                 >
                   {/* Content */}
                   <div className={`flex-1 ${isEven ? 'md:text-right' : 'md:text-left'}`}>
