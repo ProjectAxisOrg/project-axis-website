@@ -13,6 +13,10 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        mono: ['JetBrains Mono', 'IBM Plex Mono', 'Space Mono', 'monospace'],
+        sans: ['Inter', 'Roboto', 'Satoshi', 'sans-serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -57,6 +61,10 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+      },
+      fontSize: {
+        'hero': ['4rem', { lineHeight: '1.1', fontWeight: '800' }],
+        'hero-sm': ['2rem', { lineHeight: '1.2', fontWeight: '700' }],
       },
       borderRadius: {
         lg: "var(--radius)",
