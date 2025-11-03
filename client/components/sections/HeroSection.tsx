@@ -64,7 +64,10 @@ export function HeroSection() {
       <div className="relative z-10 text-center max-w-4xl">
         {/* Main Title */}
         <div className="mb-8">
-          <h1 className="font-mono text-hero font-bold text-black mb-4 uppercase tracking-tighter">
+          <h1
+            className="font-mono text-hero font-bold text-black mb-4 uppercase tracking-tighter cursor-pointer transition-all duration-200 hover:text-[#00C853]"
+            data-easter-egg="project-axis"
+          >
             Project Axis
           </h1>
           <div className="flex items-center justify-center gap-2 mb-2">
