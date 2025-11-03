@@ -3,6 +3,7 @@ import { Mail, Github, Linkedin } from 'lucide-react';
 import { useInView } from '@/hooks/use-in-view';
 
 export function ContactFooterSection() {
+  const { ref, hasBeenInView } = useInView({ threshold: 0.2 });
   const [email, setEmail] = useState('');
   const [submitted, setSubmitted] = useState(false);
 
