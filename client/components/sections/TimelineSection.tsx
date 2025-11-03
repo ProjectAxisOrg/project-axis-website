@@ -75,10 +75,10 @@ export function TimelineSection() {
   };
 
   return (
-    <section id="timeline" className="min-h-screen bg-white px-6 py-20">
+    <section id="timeline" className="min-h-screen bg-white px-6 py-20" ref={ref}>
       <div className="max-w-6xl mx-auto w-full">
         {/* Section Title */}
-        <div className="mb-12">
+        <div className={`mb-12 transition-all duration-700 ${hasBeenInView ? 'animate-fade-in' : 'opacity-0'}`}>
           <h2 className="font-mono text-5xl font-bold text-black uppercase mb-4">
             The Axis Timeline
           </h2>
