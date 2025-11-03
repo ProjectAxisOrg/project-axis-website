@@ -42,7 +42,7 @@ export function ContactFooterSection() {
             </div>
 
             {/* Email Signup Form */}
-            <div className="border-4 border-black p-8 bg-white">
+            <div className={`border-4 border-black p-8 bg-white transition-all duration-700 ${hasBeenInView ? 'animate-slide-right' : 'opacity-0'}`}>
               <h3 className="font-mono text-xl font-bold text-black uppercase mb-6">
                 Subscribe for Updates
               </h3>
