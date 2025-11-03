@@ -32,7 +32,7 @@ export function ContactFooterSection() {
           {/* Content Grid */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Text Content */}
-            <div>
+            <div className={`transition-all duration-700 ${hasBeenInView ? 'animate-slide-left' : 'opacity-0'}`}>
               <p className="font-sans text-lg text-black mb-6 leading-relaxed">
                 Stay updated on the latest developments in AI research, AGI emergence predictions, and breakthrough discoveries. Join our community of researchers, students, and AI enthusiasts tracking the rise of artificial general intelligence.
               </p>
