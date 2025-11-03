@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useInView } from '@/hooks/use-in-view';
 
 type FilterType = 'all' | 'fact' | 'forecast' | 'speculation';
 
