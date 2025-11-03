@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { ChevronDown } from 'lucide-react';
+import { useEasterEggs, useProjectAxisClickEasterEgg } from '@/hooks/use-easter-eggs';
 
 interface CountdownData {
   months: number;
