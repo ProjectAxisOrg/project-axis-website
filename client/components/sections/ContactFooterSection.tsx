@@ -19,10 +19,10 @@ export function ContactFooterSection() {
   return (
     <>
       {/* Contact Section */}
-      <section id="contact" className="min-h-screen bg-white px-6 py-20 flex items-center">
+      <section id="contact" className="min-h-screen bg-white px-6 py-20 flex items-center" ref={ref}>
         <div className="max-w-4xl mx-auto w-full">
           {/* Section Title */}
-          <div className="mb-16">
+          <div className={`mb-16 transition-all duration-700 ${hasBeenInView ? 'animate-fade-in' : 'opacity-0'}`}>
             <h2 className="font-mono text-5xl font-bold text-black uppercase mb-4">
               Join the Observation
             </h2>
