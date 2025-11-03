@@ -1,9 +1,13 @@
+import { useInView } from '@/hooks/use-in-view';
+
 export function AboutSection() {
+  const { ref, hasBeenInView } = useInView({ threshold: 0.2 });
+
   return (
-    <section id="about" className="min-h-screen bg-white px-6 py-20 flex items-center">
+    <section id="about" className="min-h-screen bg-white px-6 py-20 flex items-center" ref={ref}>
       <div className="max-w-6xl mx-auto w-full">
         {/* Section Title */}
-        <div className="mb-16">
+        <div className={`mb-16 transition-all duration-700 ${hasBeenInView ? 'animate-fade-in' : 'opacity-0'}`}>
           <h2 className="font-mono text-5xl font-bold text-black uppercase mb-4">
             About Project Axis
           </h2>
