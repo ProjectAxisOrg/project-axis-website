@@ -16,9 +16,9 @@ export function AboutSection() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
-          <div>
+          <div className={`transition-all duration-700 ${hasBeenInView ? 'animate-slide-left' : 'opacity-0'}`}>
             {/* Main Content Box */}
-            <div className="border-4 border-black p-8 mb-8 bg-white">
+            <div className="border-4 border-black p-8 mb-8 bg-white hover:shadow-lg transition-shadow duration-300">
               <p className="font-sans text-lg text-black leading-relaxed mb-6">
                 <span className="font-bold">Project Axis</span> is an independent, student-led observatory that tracks and explains the evolution of AI. Through verified data, curated timelines, and public insight, it clarifies how close humanity may be to achieving AGI.
               </p>
