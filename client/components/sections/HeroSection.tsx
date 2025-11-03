@@ -85,23 +85,25 @@ export function HeroSection() {
         {/* Countdown Boxes */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12 max-w-2xl mx-auto">
           {/* AGI Months */}
-          <div className="border-4 border-black bg-white p-8">
-            <div className="text-6xl font-mono font-bold text-[#00C853] mb-2">
+          <div className="border-4 border-black bg-white p-8 hover:shadow-2xl transition-all duration-500 transform hover:scale-105 hover:border-[#00C853] cursor-pointer group">
+            <div className="text-6xl font-mono font-bold text-[#00C853] mb-2 group-hover:scale-110 transition-transform duration-300">
               {String(countdown.months).padStart(2, '0')}
             </div>
             <p className="font-mono text-sm font-bold uppercase text-black tracking-wide">
               Months to AGI
             </p>
+            <div className="h-0.5 w-0 bg-[#00C853] group-hover:w-full transition-all duration-500 mt-4" />
           </div>
 
           {/* ASI Years */}
-          <div className="border-4 border-black bg-white p-8">
-            <div className="text-6xl font-mono font-bold text-[#00C853] mb-2">
+          <div className="border-4 border-black bg-white p-8 hover:shadow-2xl transition-all duration-500 transform hover:scale-105 hover:border-[#00C853] cursor-pointer group">
+            <div className="text-6xl font-mono font-bold text-[#00C853] mb-2 group-hover:scale-110 transition-transform duration-300">
               {String(countdown.years).padStart(2, '0')}
             </div>
             <p className="font-mono text-sm font-bold uppercase text-black tracking-wide">
               Years to ASI
             </p>
+            <div className="h-0.5 w-0 bg-[#00C853] group-hover:w-full transition-all duration-500 mt-4" />
           </div>
         </div>
 
