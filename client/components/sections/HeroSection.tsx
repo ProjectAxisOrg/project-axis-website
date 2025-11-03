@@ -13,7 +13,7 @@ export function HeroSection() {
   useProjectAxisClickEasterEgg();
 
   const [countdown, setCountdown] = useState<CountdownData>({
-    months: 24,
+    months: 37,
     years: 2,
     weeks: 8,
   });
