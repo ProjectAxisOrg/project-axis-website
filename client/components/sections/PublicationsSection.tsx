@@ -110,10 +110,10 @@ export function PublicationsSection() {
                   <p className="font-mono text-xs text-gray-600 mb-4">{pub.date}</p>
                   <a
                     href={pub.downloadUrl}
-                    className="inline-flex items-center gap-2 px-4 py-2 bg-[#00C853] text-black border-2 border-[#00C853] font-mono text-xs font-bold uppercase hover:bg-black hover:text-white hover:border-black transition-all duration-200"
+                    className="inline-flex items-center gap-2 px-4 py-2 bg-[#00C853] text-black border-2 border-[#00C853] font-mono text-xs font-bold uppercase hover:bg-black hover:text-white hover:border-black transition-all duration-300 transform hover:scale-105 active:scale-95 group"
                   >
                     <span>Read Report</span>
-                    <Download className="w-3 h-3" />
+                    <Download className="w-3 h-3 group-hover:translate-y-1 transition-transform duration-300" />
                   </a>
                 </div>
               </div>
