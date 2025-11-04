@@ -19,33 +19,33 @@ interface ScenarioData {
 const forecasts: Forecast[] = [
   {
     source: 'Project Axis Analysis',
-    year: 2026,
-    confidence: 68,
+    year: 2029,
+    confidence: 65,
+    methodology: 'Aggregation of scaling trends, benchmark velocities, compute growth, and expert survey data.',
+  },
+  {
+    source: 'AI-2027 Forecast',
+    year: 2027,
+    confidence: 69,
     methodology: 'Scaling law trends + capability benchmarks',
   },
   {
-    source: 'Metaculus Community',
-    year: 2027,
-    confidence: 62,
-    methodology: 'Aggregated expert predictions',
-  },
-  {
-    source: 'AI Safety Research',
-    year: 2028,
-    confidence: 55,
-    methodology: 'Conservative alignment timeline estimates',
-  },
-  {
-    source: 'Industry Projections',
-    year: 2025,
-    confidence: 48,
-    methodology: 'Company roadmaps and announced targets',
-  },
-  {
-    source: 'Probabilistic Models',
+    source: '80,000 Hours Trend Extrapolation',
     year: 2029,
-    confidence: 52,
-    methodology: 'Bayesian inference from historical data',
+    confidence: 60,
+    methodology: 'Public report analysing compute, reasoning benchmarks, and bottleneck timelines',
+  },
+  {
+    source: 'Expert Survey Aggregation',
+    year: 2032,
+    confidence: 55,
+    methodology: 'large-scale expert and community surveys (e.g., Metaculus, Scholar polls)',
+  },
+  {
+    source: 'Technology Bottleneck Model',
+    year: 2034,
+    confidence: 50,
+    methodology: 'Analysis of hardware/software/social cascade constraints',
   },
 ];
 
