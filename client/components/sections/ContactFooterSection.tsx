@@ -1,17 +1,32 @@
 import { useState } from 'react';
-import { Mail, Github, Linkedin } from 'lucide-react';
+import { Mail, Github, Linkedin, Send } from 'lucide-react';
 import { useInView } from '@/hooks/use-in-view';
 
 export function ContactFooterSection() {
   const { ref, hasBeenInView } = useInView({ threshold: 0.2 });
-  const [email, setEmail] = useState('');
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    subject: '',
+    message: '',
+  });
   const [submitted, setSubmitted] = useState(false);
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (email) {
+    if (formData.name && formData.email && formData.message) {
+      // Here you would normally send the form data to a server
+      console.log('Form submitted:', formData);
       setSubmitted(true);
-      setEmail('');
+      setFormData({ name: '', email: '', subject: '', message: '' });
       setTimeout(() => setSubmitted(false), 3000);
     }
   };
@@ -20,67 +35,134 @@ export function ContactFooterSection() {
     <>
       {/* Contact Section */}
       <section id="contact" className="min-h-screen bg-white px-6 py-20 flex items-center" ref={ref}>
-        <div className="max-w-4xl mx-auto w-full">
+        <div className="max-w-5xl mx-auto w-full">
           {/* Section Title */}
           <div className={`mb-16 transition-all duration-700 ${hasBeenInView ? 'animate-fade-in' : 'opacity-0'}`}>
             <h2 className="font-mono text-5xl font-bold text-black uppercase mb-4">
-              Join the Observation
+              Get in Touch
             </h2>
             <div className="w-24 h-1 bg-[#00C853]" />
           </div>
 
           {/* Content Grid */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             {/* Text Content */}
             <div className={`transition-all duration-700 ${hasBeenInView ? 'animate-slide-left' : 'opacity-0'}`}>
               <p className="font-sans text-lg text-black mb-6 leading-relaxed">
-                Stay updated on the latest developments in AI research, AGI emergence predictions, and breakthrough discoveries. Join our community of researchers, students, and AI enthusiasts tracking the rise of artificial general intelligence.
+                Have a question about Project Axis? Want to contribute research, share insights, or collaborate on AI observation projects? We'd love to hear from you.
               </p>
-              <p className="font-sans text-base text-gray-700 leading-relaxed">
-                Receive monthly digests of curated research, timeline updates, and exclusive insights from the Project Axis team.
+              <p className="font-sans text-base text-gray-700 mb-8 leading-relaxed">
+                Reach out to our team of researchers and students dedicated to tracking the rise of artificial general intelligence.
               </p>
+
+              {/* Contact Info Cards */}
+              <div className="space-y-4">
+                <div className="border-2 border-black p-4 hover:shadow-lg transition-all duration-300">
+                  <p className="font-mono text-xs uppercase font-bold text-gray-600 mb-2">Email</p>
+                  <p className="font-sans text-base text-black">observer@projectaxis.org</p>
+                </div>
+                <div className="border-2 border-black p-4 hover:shadow-lg transition-all duration-300">
+                  <p className="font-mono text-xs uppercase font-bold text-gray-600 mb-2">Response Time</p>
+                  <p className="font-sans text-base text-black">Within 48 hours</p>
+                </div>
+                <div className="border-2 border-black p-4 hover:shadow-lg transition-all duration-300">
+                  <p className="font-mono text-xs uppercase font-bold text-gray-600 mb-2">Location</p>
+                  <p className="font-sans text-base text-black">Global Observer Network</p>
+                </div>
+              </div>
             </div>
 
-            {/* Email Signup Form */}
-            <div className={`border-4 border-black p-8 bg-white transition-all duration-700 ${hasBeenInView ? 'animate-slide-right' : 'opacity-0'}`}>
+            {/* Contact Form */}
+            <div className={`border-4 border-black p-8 bg-white transition-all duration-700 hover:shadow-xl ${hasBeenInView ? 'animate-slide-right' : 'opacity-0'}`}>
               <h3 className="font-mono text-xl font-bold text-black uppercase mb-6">
-                Subscribe for Updates
+                Send a Message
               </h3>
-              
-              <form onSubmit={handleSubmit} className="space-y-4">
+
+              <form onSubmit={handleSubmit} className="space-y-5">
+                {/* Name Field */}
+                <div>
+                  <label htmlFor="name" className="block font-mono text-sm font-bold text-black mb-2 uppercase">
+                    Name
+                  </label>
+                  <input
+                    id="name"
+                    name="name"
+                    type="text"
+                    value={formData.name}
+                    onChange={handleChange}
+                    placeholder="Your name"
+                    className="w-full px-4 py-2 border-2 border-black font-sans focus:outline-none focus:ring-2 focus:ring-[#00C853] focus:ring-offset-2 transition-all duration-200"
+                    required
+                  />
+                </div>
+
+                {/* Email Field */}
                 <div>
                   <label htmlFor="email" className="block font-mono text-sm font-bold text-black mb-2 uppercase">
                     Email Address
                   </label>
                   <input
                     id="email"
+                    name="email"
                     type="email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
+                    value={formData.email}
+                    onChange={handleChange}
                     placeholder="observer@projectaxis.org"
-                    className="w-full px-4 py-3 border-2 border-black font-sans focus:outline-none focus:ring-2 focus:ring-[#00C853] focus:ring-offset-2"
+                    className="w-full px-4 py-2 border-2 border-black font-sans focus:outline-none focus:ring-2 focus:ring-[#00C853] focus:ring-offset-2 transition-all duration-200"
                     required
                   />
                 </div>
 
+                {/* Subject Field */}
+                <div>
+                  <label htmlFor="subject" className="block font-mono text-sm font-bold text-black mb-2 uppercase">
+                    Subject
+                  </label>
+                  <input
+                    id="subject"
+                    name="subject"
+                    type="text"
+                    value={formData.subject}
+                    onChange={handleChange}
+                    placeholder="What is this about?"
+                    className="w-full px-4 py-2 border-2 border-black font-sans focus:outline-none focus:ring-2 focus:ring-[#00C853] focus:ring-offset-2 transition-all duration-200"
+                  />
+                </div>
+
+                {/* Message Field */}
+                <div>
+                  <label htmlFor="message" className="block font-mono text-sm font-bold text-black mb-2 uppercase">
+                    Message
+                  </label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    value={formData.message}
+                    onChange={handleChange}
+                    placeholder="Your message here..."
+                    rows={5}
+                    className="w-full px-4 py-2 border-2 border-black font-sans focus:outline-none focus:ring-2 focus:ring-[#00C853] focus:ring-offset-2 transition-all duration-200 resize-none"
+                    required
+                  />
+                </div>
+
+                {/* Submit Button */}
                 <button
                   type="submit"
-                  className="w-full px-6 py-3 bg-[#00C853] text-black border-2 border-[#00C853] font-mono font-bold uppercase hover:bg-black hover:text-white hover:border-black transition-all duration-200"
+                  className="w-full px-6 py-3 bg-[#00C853] text-black border-2 border-[#00C853] font-mono font-bold uppercase hover:bg-black hover:text-white hover:border-black hover:shadow-lg transition-all duration-300 transform hover:scale-105 active:scale-95 flex items-center justify-center gap-2 group"
                 >
-                  Subscribe
+                  <span>Send Message</span>
+                  <Send className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
                 </button>
 
+                {/* Success Message */}
                 {submitted && (
-                  <p className="text-[#00C853] font-mono text-sm text-center font-bold">
-                    ✓ Successfully subscribed!
-                  </p>
+                  <div className="p-4 bg-[#00C853] border-2 border-[#00C853] text-black text-center">
+                    <p className="font-mono text-sm font-bold">✓ Message sent successfully!</p>
+                    <p className="font-sans text-xs mt-1">We'll get back to you soon.</p>
+                  </div>
                 )}
               </form>
-
-              {/* Privacy Note */}
-              <p className="font-sans text-xs text-gray-600 mt-6">
-                We respect your privacy. Unsubscribe at any time. <a href="#" className="underline hover:text-black">Privacy Policy</a>
-              </p>
             </div>
           </div>
         </div>
@@ -107,22 +189,22 @@ export function ContactFooterSection() {
               </h4>
               <ul className="space-y-2">
                 <li>
-                  <a href="#" className="font-sans text-gray-300 hover:text-[#00C853] transition-colors">
+                  <a href="#" className="font-sans text-gray-300 hover:text-[#00C853] transition-colors duration-200">
                     Home
                   </a>
                 </li>
                 <li>
-                  <a href="#about" className="font-sans text-gray-300 hover:text-[#00C853] transition-colors">
+                  <a href="#about" className="font-sans text-gray-300 hover:text-[#00C853] transition-colors duration-200">
                     About
                   </a>
                 </li>
                 <li>
-                  <a href="#timeline" className="font-sans text-gray-300 hover:text-[#00C853] transition-colors">
+                  <a href="#timeline" className="font-sans text-gray-300 hover:text-[#00C853] transition-colors duration-200">
                     Timeline
                   </a>
                 </li>
                 <li>
-                  <a href="#contact" className="font-sans text-gray-300 hover:text-[#00C853] transition-colors">
+                  <a href="#contact" className="font-sans text-gray-300 hover:text-[#00C853] transition-colors duration-200">
                     Contact
                   </a>
                 </li>
@@ -136,22 +218,22 @@ export function ContactFooterSection() {
               </h4>
               <ul className="space-y-2">
                 <li>
-                  <a href="#" className="font-sans text-gray-300 hover:text-[#00C853] transition-colors">
+                  <a href="#" className="font-sans text-gray-300 hover:text-[#00C853] transition-colors duration-200">
                     Documentation
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="font-sans text-gray-300 hover:text-[#00C853] transition-colors">
+                  <a href="#" className="font-sans text-gray-300 hover:text-[#00C853] transition-colors duration-200">
                     Research Papers
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="font-sans text-gray-300 hover:text-[#00C853] transition-colors">
+                  <a href="#" className="font-sans text-gray-300 hover:text-[#00C853] transition-colors duration-200">
                     Data Archive
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="font-sans text-gray-300 hover:text-[#00C853] transition-colors">
+                  <a href="#" className="font-sans text-gray-300 hover:text-[#00C853] transition-colors duration-200">
                     Contact Us
                   </a>
                 </li>
@@ -168,10 +250,10 @@ export function ContactFooterSection() {
             <div className="flex flex-col sm:flex-row items-center gap-4 text-gray-400 font-sans text-sm">
               <p>© 2024 Project Axis. All rights reserved.</p>
               <div className="hidden sm:block w-1 h-1 bg-gray-400 rounded-full" />
-              <a href="#" className="hover:text-[#00C853] transition-colors">
+              <a href="#" className="hover:text-[#00C853] transition-colors duration-200">
                 Privacy Policy
               </a>
-              <a href="#" className="hover:text-[#00C853] transition-colors">
+              <a href="#" className="hover:text-[#00C853] transition-colors duration-200">
                 Terms of Service
               </a>
             </div>
@@ -179,22 +261,22 @@ export function ContactFooterSection() {
             {/* Social Icons */}
             <div className="flex items-center gap-6">
               <a
-                href="#"
-                className="text-gray-300 hover:text-[#00C853] transition-colors"
+                href="mailto:observer@projectaxis.org"
+                className="text-gray-300 hover:text-[#00C853] transition-colors duration-200 hover:scale-110 transform"
                 aria-label="Email"
               >
                 <Mail className="w-5 h-5" />
               </a>
               <a
                 href="#"
-                className="text-gray-300 hover:text-[#00C853] transition-colors"
+                className="text-gray-300 hover:text-[#00C853] transition-colors duration-200 hover:scale-110 transform"
                 aria-label="GitHub"
               >
                 <Github className="w-5 h-5" />
               </a>
               <a
                 href="#"
-                className="text-gray-300 hover:text-[#00C853] transition-colors"
+                className="text-gray-300 hover:text-[#00C853] transition-colors duration-200 hover:scale-110 transform"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="w-5 h-5" />
