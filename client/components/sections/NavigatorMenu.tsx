@@ -21,6 +21,7 @@ const navigationItems: NavigationItem[] = [
 export function NavigatorMenu() {
   const [currentSection, setCurrentSection] = useState('about');
   const [hoveredItem, setHoveredItem] = useState<string | null>(null);
+  const [isCollapsed, setIsCollapsed] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
