@@ -262,13 +262,13 @@ export function BenchmarkDashboard() {
         <div className={`mt-12 grid grid-cols-1 md:grid-cols-3 gap-6 transition-all duration-700 ${hasBeenInView ? 'animate-slide-up' : 'opacity-0'}`} style={{ transitionDelay: '400ms' }}>
           <div className="border-2 border-black p-6 bg-white hover:shadow-lg transition-all duration-300">
             <p className="font-mono text-sm uppercase font-bold text-[#00C853] mb-2">Top Reasoner</p>
-            <p className="font-mono text-xl font-bold text-black">o1 Preview</p>
-            <p className="font-sans text-xs text-gray-700 mt-2">95% on complex reasoning tasks</p>
+            <p className="font-mono text-xl font-bold text-black">Gemini 2.5 Pro & Grok 4</p>
+            <p className="font-sans text-xs text-gray-700 mt-2">94% on complex reasoning tasks</p>
           </div>
           <div className="border-2 border-black p-6 bg-white hover:shadow-lg transition-all duration-300">
             <p className="font-mono text-sm uppercase font-bold text-[#00C853] mb-2">Best Overall</p>
-            <p className="font-mono text-xl font-bold text-black">Claude 3 Opus</p>
-            <p className="font-sans text-xs text-gray-700 mt-2">93% average across all benchmarks</p>
+            <p className="font-mono text-xl font-bold text-black">OpenAI GPT-5</p>
+            <p className="font-sans text-xs text-gray-700 mt-2">87% average across all benchmarks</p>
           </div>
           <div className="border-2 border-black p-6 bg-white hover:shadow-lg transition-all duration-300">
             <p className="font-mono text-sm uppercase font-bold text-[#00C853] mb-2">Vision Leader</p>
