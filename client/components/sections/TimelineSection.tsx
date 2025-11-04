@@ -14,28 +14,6 @@ interface TimelineEvent {
 
 const timelineEvents: TimelineEvent[] = [
   {
-    year: '2018',
-    title: 'GPT-1 Released',
-    description: 'OpenAI introduces the first Generative Pre-trained Transformer, marking a major leap in language modeling.',
-    type: 'fact',
-    details: [
-      'First large-scale language model trained with unsupervised learning',
-      '117 million parameters',
-      'Demonstrated zero-shot capabilities across various NLP tasks',
-    ],
-  },
-  {
-    year: '2020',
-    title: 'GPT-3 Era Begins',
-    description: 'GPT-3 demonstrates few-shot learning capabilities that shock the research community.',
-    type: 'fact',
-    details: [
-      '175 billion parameters - a 1500x increase from GPT-2',
-      'Few-shot in-context learning without fine-tuning',
-      'Started the era of large language models dominance',
-    ],
-  },
-  {
     year: '2022',
     title: 'ChatGPT Launch',
     description: 'ChatGPT reaches 100M users faster than any application in history, bringing AI to mainstream.',
@@ -59,17 +37,17 @@ const timelineEvents: TimelineEvent[] = [
   },
   {
     year: '2024',
-    title: 'Reasoning Breakthroughs',
-    description: 'O3/O4 models show emergent reasoning capabilities suggesting possible approach to AGI.',
-    type: 'forecast',
+    title: 'Reasoning Advancements',
+    description: 'Frontier multimodal AI models establish advanced reasoning capabilities across text, image, audio, video, and code.',
+    type: 'fact',
     details: [
       'Advanced reasoning capabilities with test-time compute',
-      'Multi-step problem solving with improved accuracy',
+      'Google Gemini 2.0 introduces a live multimodal API and tool-use integrations.',
       'Potential indicators of approaching AGI capabilities',
     ],
   },
   {
-    year: '2025-2026',
+    year: '2027-2028',
     title: 'AGI Emergence Window',
     description: 'Based on scaling trends and capability jumps, AGI emergence is estimated within this timeframe.',
     type: 'forecast',
@@ -80,7 +58,7 @@ const timelineEvents: TimelineEvent[] = [
     ],
   },
   {
-    year: '2027-2030',
+    year: '2028-2030',
     title: 'ASI Development',
     description: 'Artificial Superintelligence may emerge from recursive self-improvement cycles.',
     type: 'speculation',
