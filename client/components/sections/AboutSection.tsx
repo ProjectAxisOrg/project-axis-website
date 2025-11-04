@@ -81,6 +81,11 @@ export function AboutSection() {
             </div>
           </div>
         </div>
+
+        {/* Navigator Menu */}
+        <div className={`mt-16 transition-all duration-700 ${hasBeenInView ? 'animate-fade-in' : 'opacity-0'}`} style={{ transitionDelay: '300ms' }}>
+          <NavigatorMenu />
+        </div>
       </div>
     </section>
   );
