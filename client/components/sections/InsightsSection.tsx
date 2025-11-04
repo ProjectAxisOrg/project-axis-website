@@ -13,15 +13,15 @@ interface ExpertQuote {
 const expertQuotes: ExpertQuote[] = [
   {
     id: '1',
-    name: 'Geoffrey Hinton',
-    title: 'AI Pioneer, Google',
-    quote: 'It\'s now clear that deep learning is the right framework for understanding how the brain works.',
-    source: 'Interview - Nature',
-    sourceUrl: 'https://example.com',
+    name: 'Sam Altman',
+    title: '"CEO, OpenAI',
+    quote: 'My guess is we will hit AGI sooner than most people in the world think and it will matter much less ... We are beginning to turn our aim beyond (AGI), to superintelligence in the true sense of the word.',
+    source: 'Magazine - Time',
+    sourceUrl: 'https://time.com/7205596/sam-altman-superintelligence-agi',
   },
   {
     id: '2',
-    name: 'Yoshua Bengio',
+    name: 'Demis Hassabus',
     title: 'Deep Learning Researcher',
     quote: 'We are facing the most serious challenge humanity has ever faced: making the transition to AGI safely.',
     source: 'Address - Toronto Conference',
