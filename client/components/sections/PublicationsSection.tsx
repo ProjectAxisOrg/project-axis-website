@@ -35,30 +35,6 @@ const publications: Publication[] = [
     category: 'Technical',
     downloadUrl: '#',
   },
-  {
-    id: '4',
-    title: 'Safety Considerations',
-    description: 'Examining alignment challenges and safety measures necessary for AGI development.',
-    date: 'December 2023',
-    category: 'Analysis',
-    downloadUrl: '#',
-  },
-  {
-    id: '5',
-    title: 'Multimodal Reasoning',
-    description: 'Study of recent breakthroughs in multimodal AI reasoning and their significance.',
-    date: 'November 2023',
-    category: 'Research',
-    downloadUrl: '#',
-  },
-  {
-    id: '6',
-    title: 'Economic Impact Report',
-    description: 'Analysis of AGI\'s potential economic implications and societal transformation scenarios.',
-    date: 'October 2023',
-    category: 'Economic',
-    downloadUrl: '#',
-  },
 ];
 
 export function PublicationsSection() {
