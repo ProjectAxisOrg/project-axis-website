@@ -52,7 +52,7 @@ export function ContactFooterSection() {
                 Have a question about Project Axis? Want to contribute research, share insights, or collaborate on AI observation projects? We'd love to hear from you.
               </p>
               <p className="font-sans text-base text-gray-700 mb-8 leading-relaxed">
-                Reach out to our team of researchers and students dedicated to tracking the rise of artificial general intelligence.
+                Let's connect and explore the frontier of AGI together. Whether you're a researcher, observer, or visionary—reach out.
               </p>
 
               {/* Contact Info Cards */}
