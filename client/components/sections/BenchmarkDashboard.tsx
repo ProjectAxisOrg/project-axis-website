@@ -272,8 +272,8 @@ export function BenchmarkDashboard() {
           </div>
           <div className="border-2 border-black p-6 bg-white hover:shadow-lg transition-all duration-300">
             <p className="font-mono text-sm uppercase font-bold text-[#00C853] mb-2">Vision Leader</p>
-            <p className="font-mono text-xl font-bold text-black">Gemini 2.0</p>
-            <p className="font-sans text-xs text-gray-700 mt-2">93% on visual understanding</p>
+            <p className="font-mono text-xl font-bold text-black">Gemini 2.5 Pro // OpenAI GPT-5</p>
+            <p className="font-sans text-xs text-gray-700 mt-2">84% on visual understanding</p>
           </div>
         </div>
 
