@@ -6,6 +6,7 @@ import { BenchmarkDashboard } from '@/components/sections/BenchmarkDashboard';
 import { InsightsSection } from '@/components/sections/InsightsSection';
 import { PublicationsSection } from '@/components/sections/PublicationsSection';
 import { ContactFooterSection } from '@/components/sections/ContactFooterSection';
+import { ProgressIndicator } from '@/components/ProgressIndicator';
 
 export default function Index() {
   return (
