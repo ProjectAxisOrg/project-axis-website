@@ -125,6 +125,17 @@
 
   body {
     @apply bg-background text-foreground;
+    background-image:
+      /* Subtle grid pattern */
+      linear-gradient(0deg, rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+      /* Accent dots at intersections */
+      radial-gradient(circle, rgba(0, 200, 83, 0.05) 1px, transparent 1px);
+    background-size:
+      60px 60px,
+      60px 60px,
+      60px 60px;
+    background-position: 0 0, 0 0, 0 0;
   }
 
   :where(p, span, li, h1, h2, h3, h4, h5, h6, a, button, label, td, th) {
