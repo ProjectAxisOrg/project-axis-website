@@ -40,7 +40,7 @@ const expertQuotes: ExpertQuote[] = [
     "name": "Anthony Aguirre",
     "title": "Professor of Physics, University of California, Santa Cruz",
     "quote": "This essay argues that we should keep the future human by closing the \"gates\" to smarter-than-human, autonomous, general-purpose AI – sometimes called “AGI” – and especially to the highly-superhuman version sometimes called “superintelligence.”",
-    "source": "Keep the Future Human: Why and How We Should Close the Gates to AGI and Superintelligence, and What We Should Build Instead",
+    "source": "Statement - KeepTheFutureHuman",
     "sourceUrl": "https://keepthefuturehuman.ai/wp-content/uploads/2025/03/Keep_the_Future_Human__AnthonyAguirre__5March2025.pdf"
   }
 ];
