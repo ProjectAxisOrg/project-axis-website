@@ -29,11 +29,11 @@ export function AboutSection() {
 
             {/* Key Stats */}
             <div className="grid grid-cols-2 gap-4">
-              <div className="border-2 border-black p-4 text-center">
+              <div className="border-2 border-black p-4 text-center hover:border-[#00C853] hover:shadow-lg hover:bg-[#f9fff7] transition-all duration-300 cursor-pointer transform hover:scale-105">
                 <div className="text-3xl font-mono font-bold text-[#00C853] mb-1">50+</div>
                 <p className="font-mono text-xs uppercase font-semibold text-black">Data Points</p>
               </div>
-              <div className="border-2 border-black p-4 text-center">
+              <div className="border-2 border-black p-4 text-center hover:border-[#00C853] hover:shadow-lg hover:bg-[#f9fff7] transition-all duration-300 cursor-pointer transform hover:scale-105">
                 <div className="text-3xl font-mono font-bold text-[#00C853] mb-1">12</div>
                 <p className="font-mono text-xs uppercase font-semibold text-black">Expert Sources</p>
               </div>
