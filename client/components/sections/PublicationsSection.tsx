@@ -82,7 +82,7 @@ export function PublicationsSection() {
             return (
               <div
                 key={pub.id}
-                className={`border-3 border-black bg-white p-6 hover:shadow-lg transition-all duration-700 flex flex-col ${hasBeenInView ? 'animate-slide-up' : 'opacity-0'}`}
+                className={`border-3 border-black bg-white p-6 hover:shadow-2xl transition-all duration-700 flex flex-col transform hover:scale-105 hover:-translate-y-2 hover:border-[#00C853] ${hasBeenInView ? 'animate-slide-up' : 'opacity-0'}`}
                 style={{ animationDelay: delay }}
               >
                 {/* Document Header */}
