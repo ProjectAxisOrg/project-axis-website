@@ -93,10 +93,10 @@ export function InsightsSection() {
                   {/* View Source Button */}
                   <a
                     href={expert.sourceUrl}
-                    className="inline-flex items-center gap-2 px-4 py-2 border-2 border-[#00C853] bg-white text-[#00C853] font-mono text-xs font-bold uppercase hover:bg-[#00C853] hover:text-black transition-all duration-200"
+                    className="inline-flex items-center gap-2 px-4 py-2 border-2 border-[#00C853] bg-white text-[#00C853] font-mono text-xs font-bold uppercase hover:bg-[#00C853] hover:text-black transition-all duration-300 transform hover:scale-105 active:scale-95 group"
                   >
                     <span>{expert.source}</span>
-                    <ExternalLink className="w-3 h-3" />
+                    <ExternalLink className="w-3 h-3 group-hover:rotate-45 transition-transform duration-300" />
                   </a>
                 </div>
               </div>
