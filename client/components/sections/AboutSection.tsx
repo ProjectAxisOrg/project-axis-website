@@ -1,4 +1,5 @@
 import { useInView } from '@/hooks/use-in-view';
+import { NavigatorMenu } from './NavigatorMenu';
 
 export function AboutSection() {
   const { ref, hasBeenInView } = useInView({ threshold: 0.2 });
