@@ -67,7 +67,7 @@ const models: ModelBenchmark[] = [
     vision: 84,
     coding: 60,
     instruction: 92,
-    releaseYear: 2024,
+    releaseYear: 2025,
     color: 'from-amber-500 to-amber-600',
   },
 ];
