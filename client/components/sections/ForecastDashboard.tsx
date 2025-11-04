@@ -77,11 +77,11 @@ const scenarios: ScenarioData[] = [
 ];
 
 const capabilityFactors = [
-  { name: 'Reasoning Capability', weight: 25, current: 62 },
-  { name: 'Knowledge Integration', weight: 20, current: 78 },
-  { name: 'Long-Context Understanding', weight: 18, current: 71 },
-  { name: 'Autonomous Goal Completion', weight: 20, current: 45 },
-  { name: 'Multi-Modal Reasoning', weight: 17, current: 68 },
+  { name: 'Reasoning Capability', weight: 25, current: 75 },
+  { name: 'Knowledge Integration', weight: 20, current: 68 },
+  { name: 'Long-Context Understanding', weight: 18, current: 60 },
+  { name: 'Autonomous Goal Completion', weight: 20, current: 55 },
+  { name: 'Multi-Modal Reasoning', weight: 17, current: 70 },
 ];
 
 export function ForecastDashboard() {
