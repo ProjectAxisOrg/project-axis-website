@@ -14,6 +14,7 @@ export default function Index() {
       <AboutSection />
       <TimelineSection />
       <ForecastDashboard />
+      <BenchmarkDashboard />
       <InsightsSection />
       <PublicationsSection />
       <ContactFooterSection />
