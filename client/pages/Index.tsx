@@ -11,6 +11,7 @@ import { ProgressIndicator } from '@/components/ProgressIndicator';
 export default function Index() {
   return (
     <div className="w-full bg-white">
+      <ProgressIndicator />
       <HeroSection />
       <AboutSection />
       <TimelineSection />
