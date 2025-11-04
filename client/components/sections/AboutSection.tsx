@@ -42,7 +42,7 @@ export function AboutSection() {
 
           {/* Visual Element - Stylized Neural Network */}
           <div className={`flex items-center justify-center transition-all duration-700 ${hasBeenInView ? 'animate-slide-right' : 'opacity-0'}`}>
-            <div className="relative w-full max-w-sm aspect-square border-4 border-black bg-white p-8 flex items-center justify-center hover:shadow-lg transition-shadow duration-300">
+            <div className="relative w-full max-w-sm aspect-square border-4 border-black bg-white p-8 flex items-center justify-center hover:shadow-2xl transition-all duration-300 hover:border-[#00C853] transform hover:scale-105 group">
               <svg className="w-full h-full" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
                 {/* Central Node */}
                 <circle cx="200" cy="200" r="20" fill="#00C853" strokeWidth="3" stroke="black" />
