@@ -66,7 +66,7 @@ export function InsightsSection() {
             return (
               <div
                 key={expert.id}
-                className={`group border-4 border-black bg-white p-8 hover:shadow-lg transition-all duration-700 relative overflow-hidden ${hasBeenInView ? 'animate-slide-up' : 'opacity-0'}`}
+                className={`group border-4 border-black bg-white p-8 hover:shadow-2xl transition-all duration-700 relative overflow-hidden transform hover:scale-105 hover:-translate-y-2 hover:border-[#00C853] ${hasBeenInView ? 'animate-slide-up' : 'opacity-0'}`}
                 style={{ animationDelay: delay }}
               >
                 {/* Green glow effect on hover */}
