@@ -52,26 +52,26 @@ const forecasts: Forecast[] = [
 const scenarios: ScenarioData[] = [
   {
     name: 'Early Emergence',
-    probability: 18,
-    year: '2024-2025',
+    probability: 30,
+    year: '2026-2027',
     description: 'Rapid capability breakthroughs lead to AGI sooner than expected',
   },
   {
     name: 'Near-Term Emergence',
-    probability: 45,
-    year: '2025-2027',
+    probability: 35,
+    year: '2027-2029',
     description: 'AGI emerges within the 24-month window (most likely scenario)',
   },
   {
     name: 'Mid-Term Emergence',
-    probability: 28,
-    year: '2028-2030',
+    probability: 20,
+    year: '2029-2031',
     description: 'Emergence delayed due to technical challenges or regulatory pause',
   },
   {
     name: 'Extended Timeline',
-    probability: 9,
-    year: '2031+',
+    probability: 10,
+    year: '2032+',
     description: 'Fundamental breakthroughs still needed; emergence pushed to beyond 2031',
   },
 ];
