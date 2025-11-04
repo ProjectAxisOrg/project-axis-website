@@ -12,6 +12,7 @@ export default function Index() {
       <HeroSection />
       <AboutSection />
       <TimelineSection />
+      <ForecastDashboard />
       <InsightsSection />
       <PublicationsSection />
       <ContactFooterSection />
