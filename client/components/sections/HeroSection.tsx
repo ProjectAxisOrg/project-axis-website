@@ -121,7 +121,7 @@ export function HeroSection() {
             className="px-8 py-3 bg-[#00C853] text-black border-3 border-[#00C853] font-mono font-bold uppercase hover:bg-black hover:border-black hover:text-white hover:shadow-xl transition-all duration-300 transform hover:scale-105 active:scale-95 relative overflow-hidden group"
           >
             <span className="relative z-10">Read the Forecast</span>
-            <div className="absolute inset-0 bg-black transform -skew-x-12 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
+            <div className="absolute inset-0 transform -skew-x-12 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
           </button>
         </div>
 
