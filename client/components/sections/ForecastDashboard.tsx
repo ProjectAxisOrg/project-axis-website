@@ -199,10 +199,10 @@ export function ForecastDashboard() {
                         <p className="font-mono text-sm font-bold text-black uppercase">{scenario.name}</p>
                         <p className="font-sans text-xs text-gray-600 mt-1">{scenario.description}</p>
                       </div>
-                      <div className="text-right">
-                        <p className="font-mono text-2xl font-bold text-[#00C853]">{scenario.probability}%</p>
-                        <p className="font-mono text-xs text-gray-600">PROBABILITY</p>
-                      </div>
+                        <div
+                          className={`h-full bg-[#00C853] transition-all duration-500 $`}
+                          style={{ width: `${scenario.probability}%` }}
+                        />
                     </div>
 
                     {/* Probability Bar */}
