@@ -174,7 +174,7 @@ export function BenchmarkDashboard() {
                     <div className="flex-1">
                       <div className="h-8 border-3 border-black bg-white relative overflow-hidden">
                         <div
-                          className={`h-full bg-gradient-to-r ${model.color} transition-all duration-500 flex items-center justify-end pr-3 ${hoveredModel === model.name ? 'shadow-lg' : ''}`}
+                          className={`h-full bg-[#00C853] ${model.color} transition-all duration-500 flex items-center justify-end pr-3 ${hoveredModel === model.name ? 'shadow-lg' : ''}`}
                           style={{ width: `${score}%` }}
                         >
                           <p className="font-mono text-xs font-bold text-white">{score}%</p>
