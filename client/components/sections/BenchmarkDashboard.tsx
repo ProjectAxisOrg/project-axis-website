@@ -235,7 +235,7 @@ export function BenchmarkDashboard() {
                             <div className="relative">
                               <div className="h-6 bg-white border-2 border-black flex items-center justify-center">
                                 <div
-                                  className={`absolute left-0 h-full bg-${model.color} transition-all duration-300`}
+                                  className={`absolute left-0 h-full bg-blue-500 transition-all duration-300`}
                                   style={{ width: `${score}%` }}
                                 />
                                 <p className="relative z-10 font-mono text-xs font-bold text-black">{score}%</p>
