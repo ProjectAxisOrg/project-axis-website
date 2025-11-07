@@ -209,7 +209,7 @@ export function ForecastDashboard() {
                     <div className="mb-2">
                       <div className="w-full h-3 border-2 border-black  relative">
                         <div
-                          className="h-full bg-gradient-to-r from-[#00C853] to-[#00C853] transition-all duration-500"
+                          className="h-full bg-[#00C853] transition-all duration-500"
                           style={{ width: `${scenario.probability}%` }}
                         />
                       </div>
