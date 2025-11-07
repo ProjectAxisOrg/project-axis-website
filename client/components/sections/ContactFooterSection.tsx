@@ -218,23 +218,18 @@ export function ContactFooterSection() {
               </h4>
               <ul className="space-y-2">
                 <li>
-                  <a href="#" className="font-sans text-gray-300 hover:text-[#00C853] transition-colors duration-200">
+                  <a href="docs.google.com/document/d/1rCkqXrlmGUe6fSpgfZ8HmXYqM2gSGDXNR25jW1Jm4i8/" className="font-sans text-gray-300 hover:text-[#00C853] transition-colors duration-200">
                     Documentation
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="font-sans text-gray-300 hover:text-[#00C853] transition-colors duration-200">
-                    Research Papers
+                  <a href="https://docs.google.com/document/d/1-QN_7iRRqrI6l2oeL8FDIQcac__y1O77OSdw9QO0Wlg/edit?tab=t.0" className="font-sans text-gray-300 hover:text-[#00C853] transition-colors duration-200">
+                    Sources
                   </a>
                 </li>
                 <li>
                   <a href="#" className="font-sans text-gray-300 hover:text-[#00C853] transition-colors duration-200">
                     Data Archive
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="font-sans text-gray-300 hover:text-[#00C853] transition-colors duration-200">
-                    Contact Us
                   </a>
                 </li>
               </ul>
@@ -265,7 +260,7 @@ export function ContactFooterSection() {
                 <Mail className="w-5 h-5" />
               </a>
               <a
-                href="#"
+                href="https://github.com/ProjectAxisOrg"
                 className="text-gray-300 hover:text-[#00C853] transition-colors duration-200 hover:scale-110 transform"
                 aria-label="GitHub"
               >
