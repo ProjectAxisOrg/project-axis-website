@@ -87,7 +87,7 @@ export function ContactFooterSection() {
                   href="https://docs.google.com/document/d/1rCkqXrlmGUe6fSpgfZ8HmXYqM2gSGDXNR25jW1Jm4i8/edit?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full flex items-center justify-start gap-4 p-4 border-2 border-gray-600 text-gray-300 font-mono font-bold uppercase hover:border-[#00C853] hover:text-[#00C853] transition-all duration-300 transform hover:scale-[1.02]"
+                  className="w-full flex items-center justify-start gap-4 p-4 border-2 border-gray-600 text-black font-mono font-bold uppercase hover:border-[#00C853]  transition-all duration-300 transform hover:scale-[1.02]"
                 >
                   <Code className="w-6 h-6" />
                   <span>Read Documentation</span>
