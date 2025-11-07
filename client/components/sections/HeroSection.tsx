@@ -111,7 +111,7 @@ export function HeroSection() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
           <button
             onClick={scrollToTimeline}
-            className="px-8 py-3 border-3 border-black bg-white text-black font-mono font-bold uppercase hover:bg-black hover:text-white hover:shadow-xl transition-all duration-300 transform hover:scale-105 active:scale-95 relative overflow-hidden group"
+            className="px-8 py-3 border-3 border-black bg-white text-black font-mono font-bold uppercase"
           >
             <span className="relative z-10">View Timeline</span>
             <div className="absolute inset-0 bg-black transform -skew-x-12 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
