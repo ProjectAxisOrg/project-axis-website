@@ -56,7 +56,7 @@ export function ContactFooterSection() {
                 Collaboration Hub
               </h3>
 
-              <p className="font-sans text-gray-300 mb-8 leading-relaxed">
+              <p className="font-sans mb-8 leading-relaxed">
                 We're actively seeking data contributors and expert reviewers. Engage with our project via the following key channels:
               </p>
 
