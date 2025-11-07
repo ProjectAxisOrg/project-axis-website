@@ -248,13 +248,10 @@ export function ContactFooterSection() {
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             {/* Copyright and Links */}
             <div className="flex flex-col sm:flex-row items-center gap-4 text-gray-400 font-sans text-sm">
-              <p>© 2024 Project Axis. All rights reserved.</p>
+              <p>© 2025 Project Axis. All rights reserved.</p>
               <div className="hidden sm:block w-1 h-1 bg-gray-400 rounded-full" />
-              <a href="#" className="hover:text-[#00C853] transition-colors duration-200">
-                Privacy Policy
-              </a>
-              <a href="#" className="hover:text-[#00C853] transition-colors duration-200">
-                Terms of Service
+              <a href="https://docs.google.com/document/d/1ymMatIJDDrih0Qzz1kaIVNeIwCH-yMObvxZmb2QTWFc/edit?tab=t.0" className="hover:text-[#00C853] transition-colors duration-200">
+                Project Policy
               </a>
             </div>
 
