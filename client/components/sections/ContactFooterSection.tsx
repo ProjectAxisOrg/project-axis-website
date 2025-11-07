@@ -228,7 +228,7 @@ export function ContactFooterSection() {
                   </a>
                 </li>
                 <li>
-                  <a target="_blank "href="#" className="font-sans text-gray-300 hover:text-[#00C853] transition-colors duration-200">
+                  <a target="_blank " href="https://github.com/ProjectAxisOrg/ProjectAxis-Data-Archive" className="font-sans text-gray-300 hover:text-[#00C853] transition-colors duration-200">
                     Data Archive
                   </a>
                 </li>
