@@ -49,7 +49,7 @@ export function ContactFooterSection() {
             {/* Text Content */}
             <div className={`transition-all duration-700 ${hasBeenInView ? 'animate-slide-left' : 'opacity-0'}`}>
               <p className="font-sans text-lg text-black mb-6 leading-relaxed">
-                Have a question about Project Axis? Want to contribute research, share insights, or collaborate on AI observation projects? We'd love to hear from you.
+                Have a question about Project Axis? Want to contribute research, share insights, or collaborate on AI observation projects? I'd love to hear from you.
               </p>
               <p className="font-sans text-base text-gray-700 mb-8 leading-relaxed">
                 Let's connect and explore the frontier of AGI together. Whether you're a researcher, observer, or visionary—reach out.
@@ -59,7 +59,7 @@ export function ContactFooterSection() {
               <div className="space-y-4">
                 <div className="border-2 border-black p-4 hover:shadow-lg transition-all duration-300">
                   <p className="font-mono text-xs uppercase font-bold text-gray-600 mb-2">Email</p>
-                  <p className="font-sans text-base text-black">observer@projectaxis.org</p>
+                  <p className="font-sans text-base text-black">admin@projectaxis.org</p>
                 </div>
                 <div className="border-2 border-black p-4 hover:shadow-lg transition-all duration-300">
                   <p className="font-mono text-xs uppercase font-bold text-gray-600 mb-2">Response Time</p>
