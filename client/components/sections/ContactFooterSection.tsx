@@ -266,13 +266,6 @@ export function ContactFooterSection() {
               >
                 <Github className="w-5 h-5" />
               </a>
-              <a
-                href="#"
-                className="text-gray-300 hover:text-[#00C853] transition-colors duration-200 hover:scale-110 transform"
-                aria-label="LinkedIn"
-              >
-                <Linkedin className="w-5 h-5" />
-              </a>
             </div>
           </div>
         </div>
