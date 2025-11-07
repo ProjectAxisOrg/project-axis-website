@@ -51,7 +51,7 @@ export function ContactFooterSection() {
             </div>
 
             {/* 🔥 NEW: Collaboration & Observation Hub (RIGHT - Replaces Form) */}
-            <div className={`border-4 border-black p-8 bg-black text-white transition-all duration-700 hover:shadow-xl ${hasBeenInView ? 'animate-slide-right' : 'opacity-0'}`}>
+            <div className={`border-6 border-black p-8 text-black transition-all duration-700 hover:shadow-xl ${hasBeenInView ? 'animate-slide-right' : 'opacity-0'}`}>
               <h3 className="font-mono text-xl font-bold text-[#00C853] uppercase mb-6">
                 Collaboration Hub
               </h3>
