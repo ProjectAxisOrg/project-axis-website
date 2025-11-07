@@ -199,20 +199,24 @@ export function ForecastDashboard() {
                         <p className="font-mono text-sm font-bold text-black uppercase">{scenario.name}</p>
                         <p className="font-sans text-xs text-gray-600 mt-1">{scenario.description}</p>
                       </div>
-                        <div
-                          className={`h-full bg-[#00C853] transition-all duration-500 $`}
-                          style={{ width: `${scenario.probability}%` }}
-                        />
+                      <div className="text-right">
+                        <p className="font-mono text-2xl font-bold text-[#00C853]">{scenario.probability}%</p>
+                        <p className="font-mono text-xs text-gray-600">PROBABILITY</p>
+                      </div>
                     </div>
 
                     {/* Probability Bar */}
                     <div className="mb-2">
                       <div className="w-full h-3 border-2 border-black bg-white relative">
                         <div
-                          className="h-full bg-gradient-to-r from-[#00C853] to-[#00C853] transition-all duration-500"
+                          className={`h-full bg-[#00C853] transition-all duration-500`}
                           style={{ width: `${scenario.probability}%` }}
                         />
                       </div>
+                      <div
+                        className={`h-full bg-[#00C853] transition-all duration-500 ${hoveredForecast === forecast.source ? 'animate-pulse' : ''}`}
+                        style={{ width: `${forecast.confidence}%` }}
+                      />
                     </div>
                     <p className="font-mono text-xs text-gray-600">{scenario.year}</p>
                   </div>
