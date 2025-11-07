@@ -55,7 +55,7 @@ export function NavigatorMenu() {
       <div className="p-8 flex items-center justify-between gap-4 border-b-4 border-black">
         <div className="flex items-center gap-3 flex-1">
           <div className={`w-3 h-3 bg-[#00C853] rounded-full transition-all duration-300 flex-shrink-0`} />
-          <h3 className={`font-mono font-bold text-black uppercase transition-all duration-300 ${isCollapsed ? 'opacity-0 invisible' : 'opacity-100 visible'} text-lg`}>
+          <h3 className={`font-mono font-bold text-black uppercase transition-all duration-300 $ text-lg`}>
             Navigate Site
           </h3>
         </div>
