@@ -28,7 +28,7 @@ const models: ModelBenchmark[] = [
     coding: 75,
     instruction: 92,
     releaseYear: 2025,
-    color: 'from-blue-500 to-blue-600',
+    color: 'blue-500',
   },
   {
     name: 'Grok 4',
@@ -38,7 +38,7 @@ const models: ModelBenchmark[] = [
     coding: 75,
     instruction: 90,
     releaseYear: 2025,
-    color: 'from-purple-500 to-purple-600',
+    color: 'purple-500',
   },
   {
     name: 'OpenAI o3',
@@ -48,7 +48,7 @@ const models: ModelBenchmark[] = [
     coding: 65,
     instruction: 91,
     releaseYear: 2025,
-    color: 'from-red-500 to-red-600',
+    color: 'red-500',
   },
   {
     name: 'Meta Llama 3.3 70B',
@@ -58,7 +58,7 @@ const models: ModelBenchmark[] = [
     coding: 88,
     instruction: 87,
     releaseYear: 2024,
-    color: 'from-green-500 to-green-600',
+    color: 'green-500',
   },
   {
     name: 'Google Gemini 2.5 Pro',
@@ -68,7 +68,7 @@ const models: ModelBenchmark[] = [
     coding: 60,
     instruction: 92,
     releaseYear: 2025,
-    color: 'from-amber-500 to-amber-600',
+    color: 'amber-500',
   },
 ];
 
