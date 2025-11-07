@@ -76,7 +76,7 @@ export function ContactFooterSection() {
                   href="https://github.com/ProjectAxisOrg/ProjectAxis-Data-Archive"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full flex items-center justify-start gap-4 p-4 border-2 border-white text-white font-mono font-bold uppercase hover:bg-gray-800 transition-all duration-300 transform hover:scale-[1.02]"
+                  className="w-full flex items-center justify-start gap-4 p-4 border-2 border-white text-black font-mono font-bold uppercase hover:bg-gray-800 transition-all duration-300 transform hover:scale-[1.02]"
                 >
                   <Github className="w-6 h-6" />
                   <span>Contribute Data / Code</span>
