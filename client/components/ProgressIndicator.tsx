@@ -73,7 +73,7 @@ export function ProgressIndicator() {
       {/* Bottom Progress Bar */}
       <div className="fixed bottom-0 left-0 right-0 h-1 bg-black z-50">
         <div
-          className="h-full bg-gradient-to-r from-[#00C853] to-[#00C853] transition-all duration-300"
+          className="h-full bg-[#00C853] transition-all duration-300"
           style={{ width: `${scrollProgress}%` }}
         />
       </div>
