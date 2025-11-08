@@ -121,7 +121,7 @@ export function NavigatorMenu() {
             </p>
             <div className="w-full h-2 border-2 border-black bg-white">
               <div
-                className="h-full bg-gradient-to-r from-[#00C853] to-[#00C853] transition-all duration-300"
+                className="h-full bg-[#00C853] transition-all duration-300"
                 style={{
                   width: `${((navigationItems.findIndex(item => item.id === currentSection) + 1) / navigationItems.length) * 100}%`,
                 }}
