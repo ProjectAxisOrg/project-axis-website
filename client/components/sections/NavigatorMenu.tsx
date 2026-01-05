@@ -10,9 +10,9 @@ interface NavigationItem {
 const navigationItems: NavigationItem[] = [
   { id: 'hero', name: 'Project Axis', icon: '🚀' },
   { id: 'about', name: 'About', icon: '📊' },
+  { id: 'agi', name: 'Understanding AGI', icon: '🧠' },
   { id: 'timeline', name: 'Timeline', icon: '⏱️' },
   { id: 'forecast', name: 'Forecast', icon: '📈' },
-  { id: 'agi', name: 'Understanding AGI', icon: '🧠' },
   { id: 'benchmarks', name: 'Benchmarks', icon: '⚡' },
   { id: 'insights', name: 'Insights', icon: '💭' },
   { id: 'publications', name: 'Publications', icon: '📚' },
