@@ -280,7 +280,7 @@ export function BenchmarkDashboard() {
         {/* Data Note */}
         <div className={`mt-12 text-center transition-all duration-700 ${hasBeenInView ? 'animate-fade-in' : 'opacity-0'}`} style={{ transitionDelay: '500ms' }}>
           <p className="font-sans text-sm text-gray-700">
-            <span className="font-bold">Note:</span> Benchmarks are composite scores based on MMLU, GSM8K, HumanEval, ARC, and HellaSwag. Scores normalized to 0-100 scale.
+            <span className="font-bold">Note:</span> Benchmarks are weighted composite scores: Reasoning (30%), Coding (30%), Vision (20%), Knowledge (10%), Instruction Following (10%). WCS Score represents the weighted composite score across all benchmarks.
           </p>
         </div>
       </div>
