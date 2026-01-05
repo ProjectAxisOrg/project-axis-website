@@ -261,19 +261,19 @@ export function BenchmarkDashboard() {
         {/* Key Insights */}
         <div className={`mt-12 grid grid-cols-1 md:grid-cols-3 gap-6 transition-all duration-700 ${hasBeenInView ? 'animate-slide-up' : 'opacity-0'}`} style={{ transitionDelay: '400ms' }}>
           <div className="border-2 border-black p-6 bg-white hover:shadow-lg transition-all duration-300">
-            <p className="font-mono text-sm uppercase font-bold text-[#00C853] mb-2">Top Reasoner</p>
-            <p className="font-mono text-xl font-bold text-black">Gemini 2.5 Pro // Grok 4</p>
-            <p className="font-sans text-xs text-gray-700 mt-2">94% on complex reasoning tasks</p>
+            <p className="font-mono text-sm uppercase font-bold text-[#00C853] mb-2">Highest Instruction Following</p>
+            <p className="font-mono text-xl font-bold text-black">Gemini 3 Pro</p>
+            <p className="font-sans text-xs text-gray-700 mt-2">98.0% on instruction adherence</p>
           </div>
           <div className="border-2 border-black p-6 bg-white hover:shadow-lg transition-all duration-300">
             <p className="font-mono text-sm uppercase font-bold text-[#00C853] mb-2">Best Overall</p>
-            <p className="font-mono text-xl font-bold text-black">OpenAI GPT-5</p>
-            <p className="font-sans text-xs text-gray-700 mt-2">87% average across all benchmarks</p>
+            <p className="font-mono text-xl font-bold text-black">GPT-5.2 (Pro/Thinking)</p>
+            <p className="font-sans text-xs text-gray-700 mt-2">85.25% weighted composite score</p>
           </div>
           <div className="border-2 border-black p-6 bg-white hover:shadow-lg transition-all duration-300">
             <p className="font-mono text-sm uppercase font-bold text-[#00C853] mb-2">Vision Leader</p>
-            <p className="font-mono text-xl font-bold text-black">Gemini 2.5 Pro // OpenAI GPT-5</p>
-            <p className="font-sans text-xs text-gray-700 mt-2">84% on visual understanding</p>
+            <p className="font-mono text-xl font-bold text-black">GPT-5.2 (Pro/Thinking)</p>
+            <p className="font-sans text-xs text-gray-700 mt-2">86.5% on visual understanding</p>
           </div>
         </div>
 
