@@ -15,9 +15,9 @@ export default function Index() {
       <ProgressIndicator />
       <HeroSection />
       <AboutSection />
+      <AGIExplanationSection />
       <TimelineSection />
       <ForecastDashboard />
-      <AGIExplanationSection />
       <BenchmarkDashboard />
       <InsightsSection />
       <PublicationsSection />
