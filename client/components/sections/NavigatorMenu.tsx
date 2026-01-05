@@ -12,6 +12,7 @@ const navigationItems: NavigationItem[] = [
   { id: 'about', name: 'About', icon: '📊' },
   { id: 'timeline', name: 'Timeline', icon: '⏱️' },
   { id: 'forecast', name: 'Forecast', icon: '📈' },
+  { id: 'agi', name: 'Understanding AGI', icon: '🧠' },
   { id: 'benchmarks', name: 'Benchmarks', icon: '⚡' },
   { id: 'insights', name: 'Insights', icon: '💭' },
   { id: 'publications', name: 'Publications', icon: '📚' },
