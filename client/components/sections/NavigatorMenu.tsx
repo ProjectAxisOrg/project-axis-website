@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react';
-import { ChevronDown } from 'lucide-react';
+import { useState, useEffect } from "react";
+import { ChevronDown } from "lucide-react";
 
 interface NavigationItem {
   id: string;
@@ -8,25 +8,25 @@ interface NavigationItem {
 }
 
 const navigationItems: NavigationItem[] = [
-  { id: 'hero', name: 'Project Axis', icon: '🚀' },
-  { id: 'about', name: 'About', icon: '📊' },
-  { id: 'agi', name: 'Understanding AGI', icon: '🧠' },
-  { id: 'timeline', name: 'Timeline', icon: '⏱️' },
-  { id: 'forecast', name: 'Forecast', icon: '📈' },
-  { id: 'benchmarks', name: 'Benchmarks', icon: '⚡' },
-  { id: 'insights', name: 'Insights', icon: '💭' },
-  { id: 'publications', name: 'Publications', icon: '📚' },
-  { id: 'contact', name: 'Contact', icon: '✉️' },
+  { id: "hero", name: "Project Axis", icon: "🚀" },
+  { id: "about", name: "About", icon: "📊" },
+  { id: "agi", name: "Understanding AGI", icon: "🧠" },
+  { id: "timeline", name: "Timeline", icon: "⏱️" },
+  { id: "forecast", name: "Forecast", icon: "📈" },
+  { id: "benchmarks", name: "Benchmarks", icon: "⚡" },
+  { id: "insights", name: "Insights", icon: "💭" },
+  { id: "publications", name: "Publications", icon: "📚" },
+  { id: "contact", name: "Contact", icon: "✉️" },
 ];
 
 export function NavigatorMenu() {
-  const [currentSection, setCurrentSection] = useState('about');
+  const [currentSection, setCurrentSection] = useState("about");
   const [hoveredItem, setHoveredItem] = useState<string | null>(null);
   const [isCollapsed, setIsCollapsed] = useState(true);
 
   useEffect(() => {
     const handleScroll = () => {
-      let activeSection = 'about';
+      let activeSection = "about";
       navigationItems.forEach((item) => {
         const element = document.getElementById(item.id);
         if (element) {
@@ -39,14 +39,14 @@ export function NavigatorMenu() {
       setCurrentSection(activeSection);
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const handleNavigate = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -55,24 +55,30 @@ export function NavigatorMenu() {
       {/* Header with Collapse Button */}
       <div className="p-8 flex items-center justify-between gap-4 border-b-4 border-black">
         <div className="flex items-center gap-3 flex-1">
-          <div className={`w-3 h-3 bg-[#00C853] rounded-full transition-all duration-300 flex-shrink-0`} />
-          <h3 className={`font-mono font-bold text-black uppercase transition-all duration-300 $ text-lg`}>
+          <div
+            className={`w-3 h-3 bg-[#00C853] rounded-full transition-all duration-300 flex-shrink-0`}
+          />
+          <h3
+            className={`font-mono font-bold text-black uppercase transition-all duration-300 $ text-lg`}
+          >
             Navigate Site
           </h3>
         </div>
         <button
           onClick={() => setIsCollapsed(!isCollapsed)}
           className="flex-shrink-0 p-2 hover:bg-gray-100 transition-all duration-300 rounded border-2 border-black hover:border-[#00C853] group"
-          title={isCollapsed ? 'Expand' : 'Collapse'}
+          title={isCollapsed ? "Expand" : "Collapse"}
         >
           <ChevronDown
-            className={`w-5 h-5 text-black group-hover:text-[#00C853] transition-transform duration-300 ${isCollapsed ? '-rotate-90' : ''}`}
+            className={`w-5 h-5 text-black group-hover:text-[#00C853] transition-transform duration-300 ${isCollapsed ? "-rotate-90" : ""}`}
           />
         </button>
       </div>
 
       {/* Collapsible Content */}
-      <div className={`transition-all duration-300 overflow-hidden ${isCollapsed ? 'max-h-0' : 'max-h-[1200px]'}`}>
+      <div
+        className={`transition-all duration-300 overflow-hidden ${isCollapsed ? "max-h-0" : "max-h-[1200px]"}`}
+      >
         <div className="p-8 space-y-1">
           <p className="font-sans text-sm text-gray-700 mb-6">
             Jump to any section of Project Axis
@@ -91,8 +97,8 @@ export function NavigatorMenu() {
                   onMouseLeave={() => setHoveredItem(null)}
                   className={`w-full px-4 py-3 border-2 font-mono text-sm font-bold uppercase transition-all duration-300 flex items-center justify-between group ${
                     isActive
-                      ? 'border-[#00C853] bg-[#f9fff7] text-[#00C853] shadow-md'
-                      : 'border-black bg-white text-black hover:border-[#00C853] hover:bg-gray-50'
+                      ? "border-[#00C853] bg-[#f9fff7] text-[#00C853] shadow-md"
+                      : "border-black bg-white text-black hover:border-[#00C853] hover:bg-gray-50"
                   }`}
                   style={{ transitionDelay: `${index * 30}ms` }}
                 >
@@ -102,13 +108,18 @@ export function NavigatorMenu() {
                   </div>
                   <svg
                     className={`w-4 h-4 transition-transform duration-300 ${
-                      hoveredItem === item.id || isActive ? 'translate-x-2' : ''
+                      hoveredItem === item.id || isActive ? "translate-x-2" : ""
                     }`}
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
                   >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 5l7 7-7 7"
+                    />
                   </svg>
                 </button>
               );
@@ -124,12 +135,14 @@ export function NavigatorMenu() {
               <div
                 className="h-full bg-[#00C853] transition-all duration-300"
                 style={{
-                  width: `${((navigationItems.findIndex(item => item.id === currentSection) + 1) / navigationItems.length) * 100}%`,
+                  width: `${((navigationItems.findIndex((item) => item.id === currentSection) + 1) / navigationItems.length) * 100}%`,
                 }}
               />
             </div>
             <p className="font-mono text-xs text-gray-600 mt-2">
-              {navigationItems.findIndex(item => item.id === currentSection) + 1} / {navigationItems.length} sections
+              {navigationItems.findIndex((item) => item.id === currentSection) +
+                1}{" "}
+              / {navigationItems.length} sections
             </p>
           </div>
         </div>
