@@ -118,11 +118,8 @@ export function AGIExplanationSection() {
               return (
                 <div
                   key={concept.title}
-                  className="transition-all duration-700 opacity-0"
-                  style={{
-                    animation: hasBeenInView ? `slideUp 0.6s ease-out forwards` : 'none',
-                    animationDelay: delay,
-                  }}
+                  className={`transition-all duration-700 ${hasBeenInView ? 'animate-slide-up' : 'opacity-0'}`}
+                  style={{ animationDelay: delay }}
                 >
                   <AGIConcept {...concept} />
                 </div>
