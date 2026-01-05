@@ -2,6 +2,7 @@ import { HeroSection } from '@/components/sections/HeroSection';
 import { AboutSection } from '@/components/sections/AboutSection';
 import { TimelineSection } from '@/components/sections/TimelineSection';
 import { ForecastDashboard } from '@/components/sections/ForecastDashboard';
+import { AGIExplanationSection } from '@/components/sections/AGIExplanationSection';
 import { BenchmarkDashboard } from '@/components/sections/BenchmarkDashboard';
 import { InsightsSection } from '@/components/sections/InsightsSection';
 import { PublicationsSection } from '@/components/sections/PublicationsSection';
